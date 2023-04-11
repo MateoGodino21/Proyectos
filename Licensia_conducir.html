@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA Licencia de concudir</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt(edad + " . ¿Tienes licencia? Responde Si o No" );
+
+    
+    if ((edad >= 18 ) && (tieneLicencia == "Si")){
+            imprimir("Puedes conducir")
+        }
+
+    else{
+        imprimir("No puedes conducir")
+    }
+
+</script>

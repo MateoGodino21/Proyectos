@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<br>
+<br>
+<br>
+
+<h1>PROGRAMA Juego de Adivinacion</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>"); 
+
+    }
+
+    function imprimir(frase) {
+        document.write (frase);
+        saltarLinea();
+    }
+
+    var añomundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año limite para calcular"));
+
+    while (añomundial <= limite){
+        imprimir("Hubo mundial de la fifa en el año " + añomundial);
+        añomundial = añomundial + 4;
+    }
+
+    imprimir("fin")
+
+</script>    
